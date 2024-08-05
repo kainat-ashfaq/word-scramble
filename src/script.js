@@ -88,6 +88,8 @@ var technology_words = [
 ];
 
 refresh2.addEventListener("click", function () {
+  input.style.display = "block";
+
   seconds = 30
   // clearInterval(interval);
       interval = setInterval(() => {
@@ -97,7 +99,7 @@ refresh2.addEventListener("click", function () {
         hint.innerText = "Time's up!";
         input.value = "";
         time.style.color = "#413748";
-
+input.style.display = "none"
 
       }
       if(seconds == 10){
